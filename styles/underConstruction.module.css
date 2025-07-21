@@ -1,0 +1,42 @@
+/* Estilos específicos do componente usando CSS Modules */
+.mainContent {
+  padding: 1rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+.heading::after {
+  content: "";
+  background-color: #ffe800;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffe800,
+    #ffe800 0.5rem,
+    #222 0.5rem,
+    #222 1rem
+  );
+  display: block;
+  height: 0.5rem;
+  margin-top: 1rem;
+}
+
+.paragraph {
+  margin: 1rem 0 0 0;
+}
+
+/* Note: There's no image in the HTML provided, but keeping the style for completeness. */
+.image {
+  max-width: 100%;
+  height: auto;
+}
